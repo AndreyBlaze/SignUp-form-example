@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Poppins:wght@200;300;400;500&family=Quicksand:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 440px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.intro p {
+    margin: 5px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+    margin: 10px 0;
+}
+
+input {
+    font-weight: 500;
+    height: 50px;
+    padding: 0 5px;
+    border: 1px solid #8c8f94;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+input:focus {
+    border: 2px solid #16056b;
+}
+
+input:hover:not(#checkbox) {
+    box-shadow: 0 0 10px #16056b;
+    transition: 0.2s ease;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.checkbox label {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+button {
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    transition: 0.3s ease-out;
+}
+
+button:hover {
+    box-shadow: 0 7px 15px rgba(22, 5, 107, .3);
+    transition: 0.3s ease-out;
+    background-color: #16056b;
+    color: #fff;
+}
